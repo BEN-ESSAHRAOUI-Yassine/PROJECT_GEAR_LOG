@@ -29,7 +29,7 @@ Understand the requirements and expected features before starting development.
 +---------------------------------------+
 | Serial | Device | Category | Status   |
 |---------------------------------------|
-| SN123 | Dell | Laptop | Repair        |
+| SN123  | Dell   | Laptop   | Repair   |
 +---------------------------------------+
 ```
 ---
