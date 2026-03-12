@@ -1,7 +1,7 @@
-Project Specification: GearLog (IT Asset Tracker)
-Launch Date: Wednesday, March 11, 2026 (Afternoon)
-Deadline: Wednesday, March 18, 2026 (Morning)
-Objective: Develop a web application to track company hardware inventory, assignments, and repair status.
+Project Specification: GearLog (IT Asset Tracker)<br>
+Launch Date: Wednesday, March 11, 2026 (Afternoon)<br>
+Deadline: Wednesday, March 18, 2026 (Morning)<br>
+Objective: Develop a web application to track company hardware inventory, assignments, and repair status.<br>
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -20,6 +20,7 @@ Understand the requirements and expected features before starting development.
   - Search functionality
   - Inventory value calculation
 - [ ] Sketch the UI layout on paper.<br>
+
 ```text
 +---------------------------------------+
 | GearLog Dashboard                     |
