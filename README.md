@@ -4,7 +4,8 @@ Deadline: Wednesday, March 18, 2026 (Morning)<br>
 Objective: Develop a web application to track company hardware inventory, assignments, and repair status.<br>
 
 ---------------------------------------------------------------------------------------------------------------
-
+![GearLog Diagram](IMAGES/PROJECT_STRUCTURE.jpg)
+---------------------------------------------------------------------------------------------------------------
 # Phase 0 — Understand the Project
 
 ## Goal
