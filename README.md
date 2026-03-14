@@ -4,7 +4,7 @@ Deadline: Wednesday, March 18, 2026 (Morning)<br>
 Objective: Develop a web application to track company hardware inventory, assignments, and repair status.<br>
 
 ---------------------------------------------------------------------------------------------------------------
-![GearLog Diagram](IMAGES/PROJECT_STRUCTURE.jpg)
+![GearLog Diagram](assets/imgs/PROJECT_STRUCTURE.jpg)
 ---------------------------------------------------------------------------------------------------------------
 # Step 0: Understand the Project
     ## Goal:
@@ -592,6 +592,8 @@ Organize project files into a clear structure.
 
 * [ ]  [Project structuring ](https://academy.recforge.com/#/course/php-language-mastery-480/level-9-building-a-complete-web-application/setting-up-the-project-structure)
 
+* [ ]  [Project structuring for beginners ](https://www.youtube.com/watch?v=CpUov3TSQ9Y)
+
     ## Tasks checklist:
 
 ```text
@@ -599,9 +601,11 @@ PROJECT_GEAR_LOG/
 ├── db.php
 ├── index.php
 ├── add_asset.php
+├── delete_asset.php
 │
-├── css/
-│   └── style.css
+├── assets/
+│   └── css/
+│       └── style.css
 │
 └── database/
     └── schema.sql
