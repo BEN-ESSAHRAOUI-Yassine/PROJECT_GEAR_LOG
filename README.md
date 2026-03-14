@@ -7,11 +7,11 @@ Objective: Develop a web application to track company hardware inventory, assign
 ![GearLog Diagram](assets/imgs/PROJECT_STRUCTURE.jpg)
 ---------------------------------------------------------------------------------------------------------------
 # Step 0: Understand the Project
-    ## Goal:
+  ## Goal:
 
 Understand the project requirements and identify the main features before starting development.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Project requirement analysis
 
@@ -19,11 +19,11 @@ Understand the project requirements and identify the main features before starti
 
 * [ ]  Feature breakdown
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [Project Documentation](https://docs.google.com/document/d/1me2bY8Id5YQKZjPOpJWLE_PHmpLzw03KlPiJZ1Vmy4w)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Read the full project specification.
 
@@ -52,16 +52,16 @@ Understand the project requirements and identify the main features before starti
 | SN123  | Dell   | Laptop   | Repair   |
 +---------------------------------------+
 ```
-    ## Expected results:
+  ## Expected results:
 
 Clear understanding of the application features and a rough interface design before development begins.
 
 # Step 1: SQL Fundamentals
-    ## Goal:
+  ## Goal:
 
 Learn the SQL basics required to create and query the project database.
 
-    ## Topics to learn:
+  ## Topics to learn:
 ```text
  CREATE DATABASE
 
@@ -79,7 +79,7 @@ Learn the SQL basics required to create and query the project database.
 
  LIKE operator
 ```
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://www.w3schools.com/sql/
 
@@ -87,7 +87,7 @@ Learn the SQL basics required to create and query the project database.
 
 * [ ]  https://www.mysqltutorial.org/
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Practice SQL commands
 
@@ -97,16 +97,16 @@ Learn the SQL basics required to create and query the project database.
 
 * [ ]  Run SELECT queries
 
-    ## Expected results:
+  ## Expected results:
 
 Ability to create and query a relational database using SQL.
 
 # Step 2: PHP + MySQL Connection (PDO)
-    ## Goal:
+  ## Goal:
 
 Connect PHP to a MySQL database using PDO.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  PDO database connection
 
@@ -114,7 +114,7 @@ Connect PHP to a MySQL database using PDO.
 
 * [ ]  executing SQL queries in PHP
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://phpdelusions.net/pdo
 
@@ -122,7 +122,7 @@ Connect PHP to a MySQL database using PDO.
 
 * [ ]  https://www.w3schools.com/php/php_mysql_connect.asp
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create a basic PDO connection script
 
@@ -130,28 +130,28 @@ Connect PHP to a MySQL database using PDO.
 
 * [ ]  Handle connection errors with try/catch
 
-    ## Expected results:
+  ## Expected results:
 
 A working PHP script that successfully connects to MySQL.
 
 # Step 3: Prepared Statements (Security)
-    ## Goal:
+  ## Goal:
 
 Learn how to protect database queries against SQL injection.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Prepared statements
 
 * [ ]  SQL injection prevention
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://phpdelusions.net/pdo/prepared
 
 * [ ]  https://www.php.net/manual/en/pdo.prepared-statements.php
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Write prepared SQL queries
 
@@ -159,43 +159,43 @@ Learn how to protect database queries against SQL injection.
 
 * [ ]  Test secure query execution
 
-    ## Expected results:
+  ## Expected results:
 
 Secure SQL queries that prevent injection attacks.
 
 # Step 4: Web Security Basics
-    ## Goal:
+  ## Goal:
 
 Understand common web vulnerabilities and how to prevent them.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Cross-Site Scripting (XSS)
 
 * [ ]  htmlspecialchars()
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://owasp.org/www-community/attacks/xss/
 
 * [ ]  https://www.php.net/manual/en/function.htmlspecialchars.php
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Study XSS attack examples
 
 * [ ]  Use htmlspecialchars() when displaying user input
 
-    ## Expected results:
+  ## Expected results:
 
 User data displayed safely without exposing the application to XSS attacks.
 
 # Step 5: HTML Forms and Tables
-    ## Goal:
+  ## Goal:
 
 Learn how to collect and display data using HTML forms and tables.
 
-    ## Topics to learn:
+  ## Topics to learn:
 ```text
  form
 
@@ -207,13 +207,13 @@ Learn how to collect and display data using HTML forms and tables.
 
  form submission (GET / POST)
 ```
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://developer.mozilla.org/en-US/docs/Learn/Forms
 
 * [ ]  https://www.w3schools.com/html/html_forms.asp
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create a basic HTML form
 
@@ -221,16 +221,16 @@ Learn how to collect and display data using HTML forms and tables.
 
 * [ ]  Display data in an HTML table
 
-    ## Expected results:
+  ## Expected results:
 
 Ability to create forms and display structured data in tables.
 
 # Step 6: CSS Layout Basics
-    ## Goal:
+  ## Goal:
 
 Style the application interface and improve layout structure.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Flexbox layout
 
@@ -238,13 +238,13 @@ Style the application interface and improve layout structure.
 
 * [ ]  Conditional styling
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 * [ ]  https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create a simple layout using Flexbox
 
@@ -252,16 +252,16 @@ Style the application interface and improve layout structure.
 
 * [ ]  Apply conditional styles for statuses
 
-    ## Expected results:
+  ## Expected results:
 
 A clean and readable user interface.
 
 # Step 7: Project Setup
-    ## Goal:
+  ## Goal:
 
 Prepare the local development environment.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Local server setup
 
@@ -269,11 +269,11 @@ Prepare the local development environment.
 
 * [ ]  Apache and MySQL services
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [XAMPP Documentation](https://www.apachefriends.org/docs/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Install XAMPP
 
@@ -287,16 +287,16 @@ htdocs/PROJECT_GEAR_LOG
 ```text
 http://localhost/PROJECT_GEAR_LOG
 ```
-    ## Expected results:
+  ## Expected results:
 
 A working local development environment.
 
 # Step 8: Database Design
-    ## Goal:
+  ## Goal:
 
 Design the relational database structure for the application.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Relational databases
 
@@ -304,11 +304,11 @@ Design the relational database structure for the application.
 
 * [ ]  Database normalization
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [MySQL documentation](https://www.w3schools.com/sql/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create database gearlog
 
@@ -320,26 +320,26 @@ Design the relational database structure for the application.
 
 * [ ]  Insert sample data
 
-    ## Expected results:
+  ## Expected results:
 
 A properly structured database ready for the application.
 
 # Step 9: Database Connection
-    ## Goal:
+  ## Goal:
 
 Create a reusable database connection file.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  PHP file inclusion
 
 * [ ]  PDO database connection
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [PHP documentation](https://www.w3schools.com/php/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create db.php
 
@@ -347,26 +347,26 @@ Create a reusable database connection file.
 
 * [ ]  Use try/catch for error handling
 
-    ## Expected results:
+  ## Expected results:
 
 All project pages can access the database through a shared connection file.
 
 # Step 10: Add Asset Form
-    ## Goal:
+  ## Goal:
 
 Create a form that allows users to add new assets.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  HTML forms
 
 * [ ]  POST requests
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [HTML documentation](https://www.w3schools.com/html/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create add_asset.php
 
@@ -382,26 +382,26 @@ Create a form that allows users to add new assets.
 
     *   Status
 
-    ## Expected results:
+  ## Expected results:
 
 Users can submit new asset information through the web interface.
 
 # Step 11: Insert Assets into Database
-    ## Goal:
+  ## Goal:
 
 Store submitted asset data in the database.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  CRUD operations
 
 * [ ]  Prepared statements
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [PDO documentation](https://www.php.net/manual/en/pdo.installation.php)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Receive form data using $_POST
 
@@ -411,26 +411,26 @@ Store submitted asset data in the database.
 
 * [ ]  Redirect back to dashboard
 
-    ## Expected results:
+  ## Expected results:
 
 Assets submitted from the form are saved in the database.
 
 # Step 12: Build the Dashboard
-    ## Goal:
+  ## Goal:
 
 Display stored assets in a dashboard interface.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  PHP loops
 
 * [ ]  Dynamic HTML generation
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [PHP documentation](https://www.w3schools.com/php/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Create index.php
 
@@ -438,26 +438,26 @@ Display stored assets in a dashboard interface.
 
 * [ ]  Display assets in an HTML table
 
-    ## Expected results:
+  ## Expected results:
 
 Users can view all assets from the database in the dashboard.
 
 # Step 13: Implement Relational JOIN
-    ## Goal:
+  ## Goal:
 
 Display category names instead of category IDs.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Relational database queries
 
 * [ ]  JOIN operations
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [SQL JOIN documentation](https://www.w3schools.com/sql/sql_join.asp)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Write SQL INNER JOIN query
 
@@ -465,49 +465,49 @@ Display category names instead of category IDs.
 
 * [ ]  Display category names in dashboard
 
-    ## Expected results:
+  ## Expected results:
 
 Dashboard shows readable category names instead of IDs.
 
 # Step 14: Inventory Value Calculation
-    ## Goal:
+  ## Goal:
 
 Calculate the total value of all assets.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  SQL aggregate functions
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [SQL documentation](https://www.w3schools.com/sql/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Use SQL SUM(price)
 
 * [ ]  Display total inventory value on dashboard
 
-    ## Expected results:
+  ## Expected results:
 
 Dashboard shows the total inventory value.
 
 # Step 15: Search Functionality
-    ## Goal:
+  ## Goal:
 
 Allow users to search assets in the system.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Dynamic SQL queries
 
 * [ ]  Filtering results
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [SQL documentation](https://www.w3schools.com/sql/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Add search bar
 
@@ -517,26 +517,26 @@ Allow users to search assets in the system.
 
 * [ ]  Filter assets by name or serial number
 
-    ## Expected results:
+  ## Expected results:
 
 Users can search for specific assets.
 
 # Step 16: Conditional Styling
-    ## Goal:
+  ## Goal:
 
 Improve UI readability using color-coded statuses.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  CSS classes
 
 * [ ]  Conditional styling
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [CSS documentation](https://www.w3schools.com/CSS/)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Apply colors based on asset status:
 ```text
@@ -548,30 +548,30 @@ Improve UI readability using color-coded statuses.
 
         Available → blue
 ```
-    ## Expected results:
+  ## Expected results:
 
 Asset status is visually distinguishable.
 
 # Step 17: Security Implementation
 
-    ## Goal:
+  ## Goal:
 
 Ensure the application follows secure coding practices.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  Security Measures :some basic OWASP security practices:
 
     *   SQL Injection prevention using PDO prepared statements
     *   Cross-Site Scripting (XSS) prevention using htmlspecialchars()
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  [PDO Prepared statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
 
 * [ ]  [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Use prepared statements everywhere
 
@@ -579,22 +579,23 @@ Ensure the application follows secure coding practices.
 
 * [ ]  Avoid direct SQL variable injection
 
-    ## Expected results:
+  ## Expected results:
 
 The application is protected from common web vulnerabilities.
 
 # Step 18: Project Organization
-    ## Goal:
+
+  ## Goal:
 
 Organize project files into a clear structure.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  [Project structuring ](https://academy.recforge.com/#/course/php-language-mastery-480/level-9-building-a-complete-web-application/setting-up-the-project-structure)
 
 * [ ]  [Project structuring for beginners ](https://www.youtube.com/watch?v=CpUov3TSQ9Y)
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 ```text
 PROJECT_GEAR_LOG/
@@ -611,16 +612,16 @@ PROJECT_GEAR_LOG/
     └── schema.sql
 ```
 
-    ## Expected results:
+  ## Expected results:
 
 Clean and maintainable project structure.
 
 # Step 19: Optional Bonus Features
-    ## Goal:
+  ## Goal:
 
 Enhance the project with advanced features.
 
-    ## Topics to learn:
+  ## Topics to learn:
 
 * [ ]  PHP OOP
 
@@ -628,7 +629,7 @@ Enhance the project with advanced features.
 
 * [ ]  Authentication systems
 
-    ## Learning Resources:
+  ## Learning Resources:
 
 * [ ]  https://www.php.net/manual/en/language.oop5.basic.php
 
@@ -638,7 +639,7 @@ Enhance the project with advanced features.
 
 * [ ]  https://www.php.net/manual/en/function.password-verify.php
 
-    ## Tasks checklist:
+  ## Tasks checklist:
 
 * [ ]  Implement OOP architecture
 
@@ -648,7 +649,7 @@ Enhance the project with advanced features.
 
 * [ ]  Implement authentication system
 
-    ## Expected results:
+  ## Expected results:
 
 A more professional and scalable application.
 
