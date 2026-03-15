@@ -68,7 +68,7 @@ value="<?= htmlspecialchars($search) ?>">
 <th>Category</th>
 <th>Price</th>
 <th>Status</th>
-<th>Action</th>
+<th>Actions</th>
 </tr>
 
 <?php foreach($assets as $a): ?>
