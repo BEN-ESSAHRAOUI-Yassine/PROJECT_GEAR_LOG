@@ -85,6 +85,9 @@ value="<?= htmlspecialchars($search) ?>">
 </td>
 
 <td>
+<a href="update_asset.php?id=<?= $a['id'] ?>">
+Edit
+</a>
 <a href="delete_asset.php?id=<?= $a['id'] ?>">
 Delete
 </a>
