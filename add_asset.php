@@ -1,6 +1,12 @@
 <?php
 
 require 'db.php';
+require 'auth.php';
+require 'role.php';
+
+if(!canEditAssets()){
+die("Access denied");
+}
 
 $categories = $pdo->query("SELECT * FROM categories")
 ->fetchAll(PDO::FETCH_ASSOC);

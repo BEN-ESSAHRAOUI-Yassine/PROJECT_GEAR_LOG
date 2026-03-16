@@ -1,6 +1,11 @@
 <?php
 
-require 'db.php';
+require 'auth.php';
+require 'role.php';
+
+if(!canEditAssets()){
+die("Access denied");
+}
 
 if(isset($_GET['id'])){
 

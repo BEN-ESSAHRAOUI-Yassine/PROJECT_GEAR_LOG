@@ -1,6 +1,7 @@
 <?php
 require 'auth.php';
 require 'db.php';
+require 'role.php';
 
 /* ---------- PARAMETERS ---------- */
 $search   = $_GET['search'] ?? '';
@@ -131,7 +132,8 @@ function sortLink($column, $label, $sort, $order, $queryBase) {
 <h1>GearLog - Asset Dashboard</h1>
 
 <p>
-Welcome <?= htmlspecialchars($_SESSION['username']) ?> |
+Welcome <?= htmlspecialchars($_SESSION['username']) ?>
+(<?= htmlspecialchars($_SESSION['role']) ?>) |
 <a href="logout.php" class="logout-btn">Logout</a>
 </p>
 
@@ -141,7 +143,9 @@ Welcome <?= htmlspecialchars($_SESSION['username']) ?> |
 
 <!-- Toolbar -->
 <div class="toolbar">
-    <a href="add_asset.php" class="btn-add">Add New Asset</a>
+    <?php if(canEditAssets()): ?>
+        <a href="add_asset.php" class="btn-add">Add New Asset</a>
+    <?php endif; ?>
 
     <form method="GET" class="filter-form">
         <input name="search" placeholder="Search asset" value="<?= htmlspecialchars($search) ?>">
@@ -179,8 +183,23 @@ Welcome <?= htmlspecialchars($_SESSION['username']) ?> |
 
     <td><?= htmlspecialchars($a['category_name']) ?></td>
     <td class="actions">
+
+        <?php if(canEditAssets()): ?>
+
         <a href="update_asset.php?id=<?= $a['id'] ?>" class="btn-edit">Edit</a>
-        <a href="delete_asset.php?id=<?= $a['id'] ?>" class="btn-delete" onclick="return confirm('Delete this asset?')">Delete</a>
+
+        <a href="delete_asset.php?id=<?= $a['id'] ?>" 
+        class="btn-delete"
+        onclick="return confirm('Delete this asset?')">
+        Delete
+        </a>
+
+        <?php else: ?>
+
+        <span style="color:gray">Read Only</span>
+
+        <?php endif; ?>
+
     </td>
 </tr>
 <?php endforeach; ?>
