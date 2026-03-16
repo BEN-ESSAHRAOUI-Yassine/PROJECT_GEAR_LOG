@@ -1,4 +1,5 @@
 <?php
+require 'auth.php';
 require 'db.php';
 
 /* ---------- PARAMETERS ---------- */
@@ -128,6 +129,11 @@ function sortLink($column, $label, $sort, $order, $queryBase) {
 <body>
 
 <h1>GearLog - Asset Dashboard</h1>
+
+<p>
+Welcome <?= htmlspecialchars($_SESSION['username']) ?> |
+<a href="logout.php" class="logout-btn">Logout</a>
+</p>
 
 <h3>Total Inventory Value: $<?= htmlspecialchars($totalValue) ?></h3>
 <h3>Filtered Inventory Value: $<?= htmlspecialchars($filteredValue ?? 0) ?></h3>

@@ -6,6 +6,14 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(100) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS User_db (
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+password VARCHAR(200) NOT NULL,
+his_role ENUM('Admin','Technician','Guest') DEFAULT 'Guest'
+);
+
 CREATE TABLE IF NOT EXISTS assets (
 id INT AUTO_INCREMENT PRIMARY KEY,
 serial_number VARCHAR(100) UNIQUE,
@@ -21,6 +29,13 @@ INSERT INTO categories (name) VALUES
 ('Monitor'),
 ('Server'),
 ('Accessories');
+
+INSERT INTO User_db (username, email, password, his_role) VALUES
+('ShadowDrake', 'shadowdrake@email.com', '$2y$10$C/gMqdZbARRGmnjFIYiM/.1Jh0wVyNJvtvQ0O34fG6mFOviQTkzEq', 'Admin'), /*dragon123*/
+('LunarWizard', 'lunarwizard@email.com', '$2y$10$YkW6C51zTZlb043ZZb2s6ujjOeKEFJ5YWomRjZhokdhlnycLPJihW', 'Technician'), /*moonmagic*/
+('IronKnight', 'ironknight@email.com', '$2y$10$jywqEIwj3uhS1a2NizJMtumxQ1hHmnhSO.kSGEHEPuhG.tn000.y6', 'Guest'), /*sword456*/
+('FrostPhoenix', 'frostphoenix@email.com', '$2y$10$Nm1D4ZyB6gATJKadzQmTiOxe.tPQEwrvptOuJjdpClKW2UL5AzCUe', 'Technician'), /*icefire789*/
+('MysticRanger', 'mysticranger@email.com', '$2y$10$IYLj7N9zgovbRR8JpdwT6Oe95PBeITwU3Un6.beOExiQt.ypeKate', 'Guest'); /*forest999*/
 
 INSERT INTO assets (serial_number, device_name, price, status, category_id) VALUES
 ('SN1001','Dell Latitude 5400',850.00,'Deployed',1),
