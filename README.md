@@ -4,14 +4,19 @@ Deadline: Wednesday, March 18, 2026 (Morning)<br>
 Objective: Develop a web application to track company hardware inventory, assignments, and repair status.<br>
 
 ---------------------------------------------------------------------------------------------------------------
+# GearLog structure Diagram
 ![GearLog Diagram](assets/imgs/PROJECT_STRUCTURE.jpg)
 ---------------------------------------------------------------------------------------------------------------
+# GearLog Use Case Diagram
 ![GearLog Use Case Diagram](assets/imgs/Diagram_Use_Case.png)
 ---------------------------------------------------------------------------------------------------------------
+# GearLog Activity Diagram
 ![GearLog Activity Diagram](assets/imgs/Activity_Diagram.png)
 ---------------------------------------------------------------------------------------------------------------
+# GearLog Class Diagram
 ![GearLog Class Diagram](assets/imgs/Diagram_Class.png)
 ---------------------------------------------------------------------------------------------------------------
+# GearLog Sequence Diagram
 ![GearLog Sequence Diagram](assets/imgs/Diagram_sequence.png)
 ---------------------------------------------------------------------------------------------------------------
 # Step 0: Understand the Project
