@@ -109,10 +109,60 @@ $totalPages = ceil($totalAssets / $limit);
 $valueStmt = $pdo->query("SELECT SUM(price) FROM assets");
 $totalValue = $valueStmt->fetchColumn();
 
+/* ---------- FILTERED INVENTORY VALUE ---------- */
+
+$filteredValueSql = "SELECT SUM(price) FROM assets WHERE 1";
+$filteredParams = [];
+
+if ($search !== '') {
+
+$filteredValueSql .= " AND (device_name LIKE :search OR serial_number LIKE :search)";
+$filteredParams['search'] = "%$search%";
+
+}
+
+if ($category !== '') {
+
+$filteredValueSql .= " AND category_id = :category";
+$filteredParams['category'] = $category;
+
+}
+
+$filteredStmt = $pdo->prepare($filteredValueSql);
+$filteredStmt->execute($filteredParams);
+
+$filteredValue = $filteredStmt->fetchColumn();
+
 /* ---------- LOAD CATEGORIES ---------- */
 
 $categories = $pdo->query("SELECT * FROM categories")
 ->fetchAll(PDO::FETCH_ASSOC);
+
+/* ---------- BUILD BASE QUERY ---------- */
+
+$queryBase = http_build_query([
+    'search' => $search,
+    'category' => $category,
+    'page' => $page
+]);
+
+/* ---------- SORT LINK FUNCTION ---------- */
+
+function sortLink($column,$label,$sort,$order,$queryBase){
+
+$newOrder = ($column === $sort && $order === 'ASC') ? 'DESC' : 'ASC';
+
+$arrow = '';
+
+if($column === $sort){
+$arrow = $order === 'ASC' ? ' ↑' : ' ↓';
+}
+
+$url = "?$queryBase&sort=$column&order=$newOrder";
+
+return "<a href='$url'>$label$arrow</a>";
+
+}
 
 ?>
 
@@ -132,6 +182,8 @@ $categories = $pdo->query("SELECT * FROM categories")
 <h1>GearLog - Asset Dashboard</h1>
 
 <h3>Total Inventory Value: $<?= htmlspecialchars($totalValue) ?></h3>
+
+<h3>Filtered Inventory Value: $<?= htmlspecialchars($filteredValue ?? 0) ?></h3>
 
 <a href="add_asset.php">Add New Asset</a>
 
@@ -176,25 +228,25 @@ value="<?= $c['id'] ?>"
 
 <tr>
 
-<th>
-<a href="?search=<?= $search ?>&category=<?= $category ?>&sort=device_name&order=ASC">
-Device
-</a>
-</th>
+<th><?= sortLink('device_name','Device',$sort,$order,$queryBase) ?></th>
+																					  
+	  
+	
+	 
 
 <th>Serial</th>
 
-<th>
-<a href="?search=<?= $search ?>&category=<?= $category ?>&sort=price&order=ASC">
-Price
-</a>
-</th>
+<th><?= sortLink('price','Price',$sort,$order,$queryBase) ?></th>
+																				
+	 
+	
+	 
 
-<th>
-<a href="?search=<?= $search ?>&category=<?= $category ?>&sort=status&order=ASC">
-Status
-</a>
-</th>
+<th><?= sortLink('status','Status',$sort,$order,$queryBase) ?></th>
+																				 
+	  
+	
+	 
 
 <th>Category</th>
 
