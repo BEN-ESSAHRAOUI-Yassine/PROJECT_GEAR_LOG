@@ -137,3 +137,29 @@ table tr:hover {
 .logout-btn:hover {
   background-color: #c0392b;
 }
+
+.btn-manage{
+background:#9b59b6;
+color:white;
+padding:10px 16px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn-manage:hover{
+background:#8e44ad;
+}
+
+.btn-back{
+background:#7f8c8d;
+color:white;
+padding:8px 14px;
+text-decoration:none;
+border-radius:4px;
+margin-right:10px;
+}
+
+.btn-back:hover{
+background:#636e72;
+}
