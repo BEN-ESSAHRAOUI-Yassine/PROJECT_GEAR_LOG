@@ -185,7 +185,9 @@ return "<a href='$url'>$label$arrow</a>";
 
 <h3>Filtered Inventory Value: $<?= htmlspecialchars($filteredValue ?? 0) ?></h3>
 
-<a href="add_asset.php">Add New Asset</a>
+<form action="add_asset.php" method="get" style="display:inline;">
+    <button class="btn-add">Add New Asset</button>
+</form>
 
 <br><br>
 
@@ -272,17 +274,16 @@ value="<?= $c['id'] ?>"
 
 <td><?= htmlspecialchars($a['category_name']) ?></td>
 
-<td>
+<td class="actions">
 
-<a href="update_asset.php?id=<?= $a['id'] ?>">Edit</a>
-
- | 
+<a href="update_asset.php?id=<?= $a['id'] ?>" class="btn-edit">
+Edit
+</a>
 
 <a href="delete_asset.php?id=<?= $a['id'] ?>"
+class="btn-delete"
 onclick="return confirm('Delete this asset?')">
-
 Delete
-
 </a>
 
 </td>
