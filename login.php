@@ -43,28 +43,23 @@ $error = "Invalid username or password";
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="login-page">
 
 <div class="login-container">
-
     <form method="POST" class="login-form">
-
-        <h2>Login</h2>
-
+        <div class="login-header">
+            <h2>Login</h2>
+        </div>
         <?php if($error): ?>
             <p class="error"><?= $error ?></p>
         <?php endif; ?>
 
-        <label>Username</label>
-        <input name="username" placeholder="Enter your username" required>
+        <input name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
 
-        <label>Password</label>
-        <input type="password" name="password" placeholder="Enter your password" required>
-
-        <button type="submit">Login</button>
+        <button type="submit">LOGIN</button>
 
     </form>
-
 </div>
 
 </body>
