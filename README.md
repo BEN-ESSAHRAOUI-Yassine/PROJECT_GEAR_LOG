@@ -451,6 +451,8 @@ Allow users to search and filter assets dynamically.
 
 * [X]  [SQL LIKE tutorial](https://dev.mysql.com/doc/refman/9.6/en/pattern-matching.html)
 
+* [X]  [http-build-query](https://www.php.net/manual/en/function.http-build-query.php)
+
   ## Tasks checklist:
 
 * [X]  Add search bar
@@ -582,6 +584,8 @@ Improve usability of large datasets.
   ## Learning Resources:
 
 * [X]  [LIMIT & OFFSET in SQL](https://dev.mysql.com/doc/refman/8.4/en/select.html)
+
+* [X]  [http-build-query](https://www.php.net/manual/en/function.http-build-query.php)
 
   ## Tasks checklist:
 
