@@ -48,7 +48,7 @@ $error = "Invalid username or password";
 <div class="login-container">
     <form method="POST" class="login-form">
         <div class="login-header">
-            <h2>Login</h2>
+            <h2>U S E R L O G I N</h2>
         </div>
         <?php if($error): ?>
             <p class="error"><?= $error ?></p>
