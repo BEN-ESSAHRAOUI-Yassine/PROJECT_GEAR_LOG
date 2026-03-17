@@ -124,6 +124,7 @@ table tr:hover {
     text-decoration: underline;
 }
 
+/* ----- log out button ----- */
 .logout-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -138,6 +139,8 @@ table tr:hover {
   background-color: #c0392b;
 }
 
+
+/* ----- manage button for admin ----- */
 .btn-manage{
 background:#9b59b6;
 color:white;
@@ -151,6 +154,7 @@ font-weight:bold;
 background:#8e44ad;
 }
 
+/* ----- back button ----- */
 .btn-back{
 background:#7f8c8d;
 color:white;

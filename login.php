@@ -53,9 +53,13 @@ $error = "Invalid username or password";
 
 <form method="POST">
 
+<p> Username : </p>
+
 <input name="username" placeholder="Username" required>
 
 <br><br>
+
+<p> Password : </p>
 
 <input type="password" name="password" placeholder="Password" required>
 
