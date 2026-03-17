@@ -26,21 +26,21 @@ Understand the project requirements and identify the main features before starti
 
   ## Topics to learn:
 
-* [ ]  Project requirement analysis
+* [X]  Project requirement analysis
 
-* [ ]  UI planning
+* [X]  UI planning
 
-* [ ]  Feature breakdown
+* [X]  Feature breakdown
 
   ## Learning Resources:
 
-* [ ]  [Project Documentation](https://docs.google.com/document/d/1me2bY8Id5YQKZjPOpJWLE_PHmpLzw03KlPiJZ1Vmy4w)
+* [X]  [Project Documentation](https://docs.google.com/document/d/1me2bY8Id5YQKZjPOpJWLE_PHmpLzw03KlPiJZ1Vmy4w)
 
   ## Tasks checklist:
 
-* [ ]  Read the full project specification.
+* [X]  Read the full project specification.
 
-* [ ]  Identify the main features:
+* [X]  Identify the main features:
 
     *   Asset inventory tracking
 
@@ -52,7 +52,7 @@ Understand the project requirements and identify the main features before starti
 
     *   Inventory value calculation
 
-* [ ]  Sketch the UI layout on paper. for example :
+* [X]  Sketch the UI layout on paper. for example :
 
 ```text
 +---------------------------------------+
@@ -94,21 +94,21 @@ Learn the SQL basics required to create and query the project database.
 ```
   ## Learning Resources:
 
-* [ ]  https://www.w3schools.com/sql/
+* [X]  https://www.w3schools.com/sql/
 
-* [ ]  https://sqlbolt.com/
+* [X]  https://sqlbolt.com/
 
-* [ ]  https://www.mysqltutorial.org/
+* [X]  https://www.mysqltutorial.org/
 
   ## Tasks checklist:
 
-* [ ]  Practice SQL commands
+* [X]  Practice SQL commands
 
-* [ ]  Create simple tables
+* [X]  Create simple tables
 
-* [ ]  Insert test data
+* [X]  Insert test data
 
-* [ ]  Run SELECT queries
+* [X]  Run SELECT queries
 
   ## Expected results:
 
@@ -121,27 +121,27 @@ Connect PHP to a MySQL database using PDO.
 
   ## Topics to learn:
 
-* [ ]  PDO database connection
+* [X]  PDO database connection
 
-* [ ]  try/catch error handling
+* [X]  try/catch error handling
 
-* [ ]  executing SQL queries in PHP
+* [X]  executing SQL queries in PHP
 
   ## Learning Resources:
 
-* [ ]  https://phpdelusions.net/pdo
+* [X]  https://phpdelusions.net/pdo
 
-* [ ]  https://www.php.net/manual/en/book.pdo.php
+* [X]  https://www.php.net/manual/en/book.pdo.php
 
-* [ ]  https://www.w3schools.com/php/php_mysql_connect.asp
+* [X]  https://www.w3schools.com/php/php_mysql_connect.asp
 
   ## Tasks checklist:
 
-* [ ]  Create a basic PDO connection script
+* [X]  Create a basic PDO connection script
 
-* [ ]  Test connection to MySQL database
+* [X]  Test connection to MySQL database
 
-* [ ]  Handle connection errors with try/catch
+* [X]  Handle connection errors with try/catch
 
   ## Expected results:
 
@@ -154,23 +154,23 @@ Learn how to protect database queries against SQL injection.
 
   ## Topics to learn:
 
-* [ ]  Prepared statements
+* [X]  Prepared statements
 
-* [ ]  SQL injection prevention
+* [X]  SQL injection prevention
 
   ## Learning Resources:
 
-* [ ]  https://phpdelusions.net/pdo/prepared
+* [X]  https://phpdelusions.net/pdo/prepared
 
-* [ ]  https://www.php.net/manual/en/pdo.prepared-statements.php
+* [X]  https://www.php.net/manual/en/pdo.prepared-statements.php
 
   ## Tasks checklist:
 
-* [ ]  Write prepared SQL queries
+* [X]  Write prepared SQL queries
 
-* [ ]  Bind parameters to SQL statements
+* [X]  Bind parameters to SQL statements
 
-* [ ]  Test secure query execution
+* [X]  Test secure query execution
 
   ## Expected results:
 
@@ -183,21 +183,21 @@ Understand common web vulnerabilities and how to prevent them.
 
   ## Topics to learn:
 
-* [ ]  Cross-Site Scripting (XSS)
+* [X]  Cross-Site Scripting (XSS)
 
-* [ ]  htmlspecialchars()
+* [X]  htmlspecialchars()
 
   ## Learning Resources:
 
-* [ ]  https://owasp.org/www-community/attacks/xss/
+* [X]  https://owasp.org/www-community/attacks/xss/
 
-* [ ]  https://www.php.net/manual/en/function.htmlspecialchars.php
+* [X]  https://www.php.net/manual/en/function.htmlspecialchars.php
 
   ## Tasks checklist:
 
-* [ ]  Study XSS attack examples
+* [X]  Study XSS attack examples
 
-* [ ]  Use htmlspecialchars() when displaying user input
+* [X]  Use htmlspecialchars() when displaying user input
 
   ## Expected results:
 
@@ -222,17 +222,17 @@ Learn how to collect and display data using HTML forms and tables.
 ```
   ## Learning Resources:
 
-* [ ]  https://developer.mozilla.org/en-US/docs/Learn/Forms
+* [X]  https://developer.mozilla.org/en-US/docs/Learn/Forms
 
-* [ ]  https://www.w3schools.com/html/html_forms.asp
+* [X]  https://www.w3schools.com/html/html_forms.asp
 
   ## Tasks checklist:
 
-* [ ]  Create a basic HTML form
+* [X]  Create a basic HTML form
 
-* [ ]  Submit form data using POST
+* [X]  Submit form data using POST
 
-* [ ]  Display data in an HTML table
+* [X]  Display data in an HTML table
 
   ## Expected results:
 
@@ -247,9 +247,9 @@ Style the application interface and improve layout structure.
 
 * [ ]  Flexbox layout
 
-* [ ]  Basic table styling
+* [X]  Basic table styling
 
-* [ ]  Conditional styling
+* [X]  Conditional styling
 
   ## Learning Resources:
 
@@ -261,9 +261,9 @@ Style the application interface and improve layout structure.
 
 * [ ]  Create a simple layout using Flexbox
 
-* [ ]  Style HTML tables
+* [X]  Style HTML tables
 
-* [ ]  Apply conditional styles for statuses
+* [X]  Apply conditional styles for statuses
 
   ## Expected results:
 
@@ -276,27 +276,27 @@ Prepare the local development environment.
 
   ## Topics to learn:
 
-* [ ]  Local server setup
+* [X]  Local server setup
 
-* [ ]  XAMPP usage
+* [X]  XAMPP usage
 
-* [ ]  Apache and MySQL services
+* [X]  Apache and MySQL services
 
   ## Learning Resources:
 
-* [ ]  [XAMPP Documentation](https://www.apachefriends.org/docs/)
+* [X]  [XAMPP Documentation](https://www.apachefriends.org/docs/)
 
   ## Tasks checklist:
 
-* [ ]  Install XAMPP
+* [X]  Install XAMPP
 
-* [ ]  Start Apache and MySQL
+* [X]  Start Apache and MySQL
 
-* [ ]  Create project folder
+* [X]  Create project folder
 ```text
 htdocs/PROJECT_GEAR_LOG
 ```
-* [ ]  Test project in browser
+* [X]  Test project in browser
 ```text
 http://localhost/PROJECT_GEAR_LOG
 ```
@@ -311,27 +311,27 @@ Design the relational database structure for the application.
 
   ## Topics to learn:
 
-* [ ]  Relational databases
+* [X]  Relational databases
 
-* [ ]  Foreign keys
+* [X]  Foreign keys
 
-* [ ]  Database normalization
+* [X]  Database normalization
 
   ## Learning Resources:
 
-* [ ]  [MySQL documentation](https://www.w3schools.com/sql/)
+* [X]  [MySQL documentation](https://www.w3schools.com/sql/)
 
   ## Tasks checklist:
 
-* [ ]  Create database gearlog
+* [X]  Create database gearlog
 
-* [ ]  Create categories table
+* [X]  Create categories table
 
-* [ ]  Create assets table
+* [X]  Create assets table
 
-* [ ]  Add foreign key relationship
+* [X]  Add foreign key relationship
 
-* [ ]  Insert sample data
+* [X]  Insert sample data
 
   ## Expected results:
 
@@ -344,21 +344,21 @@ Create a reusable database connection file.
 
   ## Topics to learn:
 
-* [ ]  PHP file inclusion
+* [X]  PHP file inclusion
 
-* [ ]  PDO database connection
+* [X]  PDO database connection
 
   ## Learning Resources:
 
-* [ ]  [PHP documentation](https://www.w3schools.com/php/)
+* [X]  [PHP documentation](https://www.w3schools.com/php/)
 
   ## Tasks checklist:
 
-* [ ]  Create db.php
+* [X]  Create db.php
 
-* [ ]  Implement PDO connection
+* [X]  Implement PDO connection
 
-* [ ]  Use try/catch for error handling
+* [X]  Use try/catch for error handling
 
   ## Expected results:
 
@@ -371,19 +371,19 @@ Create a form that allows users to add new assets.
 
   ## Topics to learn:
 
-* [ ]  HTML forms
+* [X]  HTML forms
 
-* [ ]  POST requests
+* [X]  POST requests
 
   ## Learning Resources:
 
-* [ ]  [HTML documentation](https://www.w3schools.com/html/)
+* [X]  [HTML documentation](https://www.w3schools.com/html/)
 
   ## Tasks checklist:
 
-* [ ]  Create add_asset.php
+* [X]  Create add_asset.php
 
-* [ ]  Form fields:
+* [X]  Form fields:
 
     *   Serial number
 
@@ -406,23 +406,23 @@ Store submitted asset data in the database.
 
   ## Topics to learn:
 
-* [ ]  CRUD operations
+* [X]  CRUD operations
 
-* [ ]  Prepared statements
+* [X]  Prepared statements
 
   ## Learning Resources:
 
-* [ ]  [PDO documentation](https://www.php.net/manual/en/pdo.installation.php)
+* [X]  [PDO documentation](https://www.php.net/manual/en/pdo.installation.php)
 
   ## Tasks checklist:
 
-* [ ]  Receive form data using $_POST
+* [X]  Receive form data using $_POST
 
-* [ ]  Use prepared statements
+* [X]  Use prepared statements
 
-* [ ]  Insert asset into database
+* [X]  Insert asset into database
 
-* [ ]  Redirect back to dashboard
+* [X]  Redirect back to dashboard
 
   ## Expected results:
 
@@ -435,21 +435,21 @@ Display stored assets in a dashboard interface.
 
   ## Topics to learn:
 
-* [ ]  PHP loops
+* [X]  PHP loops
 
-* [ ]  Dynamic HTML generation
+* [X]  Dynamic HTML generation
 
   ## Learning Resources:
 
-* [ ]  [PHP documentation](https://www.w3schools.com/php/)
+* [X]  [PHP documentation](https://www.w3schools.com/php/)
 
   ## Tasks checklist:
 
-* [ ]  Create index.php
+* [X]  Create index.php
 
-* [ ]  Fetch assets from database
+* [X]  Fetch assets from database
 
-* [ ]  Display assets in an HTML table
+* [X]  Display assets in an HTML table
 
   ## Expected results:
 
@@ -462,21 +462,21 @@ Display category names instead of category IDs.
 
   ## Topics to learn:
 
-* [ ]  Relational database queries
+* [X]  Relational database queries
 
-* [ ]  JOIN operations
+* [X]  JOIN operations
 
   ## Learning Resources:
 
-* [ ]  [SQL JOIN documentation](https://www.w3schools.com/sql/sql_join.asp)
+* [X]  [SQL JOIN documentation](https://www.w3schools.com/sql/sql_join.asp)
 
   ## Tasks checklist:
 
-* [ ]  Write SQL INNER JOIN query
+* [X]  Write SQL INNER JOIN query
 
-* [ ]  Replace category ID with category name
+* [X]  Replace category ID with category name
 
-* [ ]  Display category names in dashboard
+* [X]  Display category names in dashboard
 
   ## Expected results:
 
@@ -489,17 +489,17 @@ Calculate the total value of all assets.
 
   ## Topics to learn:
 
-* [ ]  SQL aggregate functions
+* [X]  SQL aggregate functions
 
   ## Learning Resources:
 
-* [ ]  [SQL documentation](https://www.w3schools.com/sql/)
+* [X]  [SQL documentation](https://www.w3schools.com/sql/)
 
   ## Tasks checklist:
 
-* [ ]  Use SQL SUM(price)
+* [X]  Use SQL SUM(price)
 
-* [ ]  Display total inventory value on dashboard
+* [X]  Display total inventory value on dashboard
 
   ## Expected results:
 
@@ -512,23 +512,23 @@ Allow users to search assets in the system.
 
   ## Topics to learn:
 
-* [ ]  Dynamic SQL queries
+* [X]  Dynamic SQL queries
 
-* [ ]  Filtering results
+* [X]  Filtering results
 
   ## Learning Resources:
 
-* [ ]  [SQL documentation](https://www.w3schools.com/sql/)
+* [X]  [SQL documentation](https://www.w3schools.com/sql/)
 
   ## Tasks checklist:
 
-* [ ]  Add search bar
+* [X]  Add search bar
 
-* [ ]  Capture search input
+* [X]  Capture search input
 
-* [ ]  Use SQL LIKE query
+* [X]  Use SQL LIKE query
 
-* [ ]  Filter assets by name or serial number
+* [X]  Filter assets by name or serial number
 
   ## Expected results:
 
@@ -541,25 +541,25 @@ Improve UI readability using color-coded statuses.
 
   ## Topics to learn:
 
-* [ ]  CSS classes
+* [X]  CSS classes
 
-* [ ]  Conditional styling
+* [X]  Conditional styling
 
   ## Learning Resources:
 
-* [ ]  [CSS documentation](https://www.w3schools.com/CSS/)
+* [X]  [CSS documentation](https://www.w3schools.com/CSS/)
 
   ## Tasks checklist:
 
-* [ ]  Apply colors based on asset status:
+* [X]  Apply colors based on asset status:
 ```text
         Not available → red
 
         Under Repair → orange
 
-        Deployed → green
+        Deployed → blue
 
-        Available → blue
+        Available → green
 ```
   ## Expected results:
 
@@ -573,24 +573,24 @@ Ensure the application follows secure coding practices.
 
   ## Topics to learn:
 
-* [ ]  Security Measures :some basic OWASP security practices:
+* [X]  Security Measures :some basic OWASP security practices:
 
     *   SQL Injection prevention using PDO prepared statements
     *   Cross-Site Scripting (XSS) prevention using htmlspecialchars()
 
   ## Learning Resources:
 
-* [ ]  [PDO Prepared statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
+* [X]  [PDO Prepared statements](https://www.php.net/manual/en/pdo.prepared-statements.php)
 
-* [ ]  [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php)
+* [X]  [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php)
 
   ## Tasks checklist:
 
-* [ ]  Use prepared statements everywhere
+* [X]  Use prepared statements everywhere
 
-* [ ]  Sanitize outputs using htmlspecialchars()
+* [X]  Sanitize outputs using htmlspecialchars()
 
-* [ ]  Avoid direct SQL variable injection
+* [X]  Avoid direct SQL variable injection
 
   ## Expected results:
 
@@ -604,9 +604,9 @@ Organize project files into a clear structure.
 
   ## Topics to learn:
 
-* [ ]  [Project structuring ](https://academy.recforge.com/#/course/php-language-mastery-480/level-9-building-a-complete-web-application/setting-up-the-project-structure)
+* [X]  [Project structuring ](https://academy.recforge.com/#/course/php-language-mastery-480/level-9-building-a-complete-web-application/setting-up-the-project-structure)
 
-* [ ]  [Project structuring for beginners ](https://www.youtube.com/watch?v=CpUov3TSQ9Y)
+* [X]  [Project structuring for beginners ](https://www.youtube.com/watch?v=CpUov3TSQ9Y)
 
   ## Tasks checklist:
 
@@ -640,7 +640,7 @@ Enhance the project with advanced features.
 
 * [ ]  Bootstrap UI
 
-* [ ]  Authentication systems
+* [X]  Authentication systems
 
   ## Learning Resources:
 
@@ -648,9 +648,9 @@ Enhance the project with advanced features.
 
 * [ ]  https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
-* [ ]  https://www.php.net/manual/en/function.password-hash.php
+* [X]  https://www.php.net/manual/en/function.password-hash.php
 
-* [ ]  https://www.php.net/manual/en/function.password-verify.php
+* [X]  https://www.php.net/manual/en/function.password-verify.php
 
   ## Tasks checklist:
 
@@ -660,7 +660,7 @@ Enhance the project with advanced features.
 
 * [ ]  Add Bootstrap UI
 
-* [ ]  Implement authentication system
+* [X]  Implement authentication system
 
   ## Expected results:
 
@@ -670,22 +670,22 @@ A more professional and scalable application.
 
 # Final Submission Checklist
 
-* [ ]  Database created
+* [X]  Database created
 
-* [ ]  PDO connection works
+* [X]  PDO connection works
 
-* [ ]  Assets can be added
+* [X]  Assets can be added
 
-* [ ]  Dashboard displays assets
+* [X]  Dashboard displays assets
 
-* [ ]  Category names shown via JOIN
+* [X]  Category names shown via JOIN
 
-* [ ]  Inventory value calculated
+* [X]  Inventory value calculated
 
-* [ ]  Search feature works
+* [X]  Search feature works
 
-* [ ]  Status colors applied
+* [X]  Status colors applied
 
-* [ ]  Prepared statements used
+* [X]  Prepared statements used
 
-* [ ]  Outputs sanitized with htmlspecialchars()
+* [X]  Outputs sanitized with htmlspecialchars()
