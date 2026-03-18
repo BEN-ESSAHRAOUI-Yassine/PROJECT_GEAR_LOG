@@ -107,6 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <head>
 <title>Edit Asset</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>

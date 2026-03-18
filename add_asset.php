@@ -80,22 +80,22 @@ exit();
 <head>
 
 <title>Add Asset</title>
-
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+<div class="form-container">
+<h1>Add Asset</h1>
 
-<h2>Add Asset</h2>
+<form class="asset-form" method="POST">
 
-<form method="POST">
+<input type="text" name="serial" placeholder="Serial Number" required>
 
-<input name="serial" placeholder="Serial Number">
+<input type="text" name="name" placeholder="Device Name" required>
 
-<input name="name" placeholder="Device Name">
+<input name="price" type="number" step="0.01" placeholder="Price" required>
 
-<input name="price" type="number" step="0.01" placeholder="Price">
-
-<select name="status">
+<select name="status" required>
 
 <option>Unavailable</option>
 <option>Available</option>
@@ -104,7 +104,7 @@ exit();
 
 </select>
 
-<select name="category">
+<select name="category" required>
 
 <?php foreach($categories as $c): ?>
 
@@ -116,13 +116,13 @@ exit();
 
 </select>
 
-<button>Add</button>
+<button type="submit" class="btn-submit">Add</button>
 
 </form>
 
 <?php if(!empty($errors)): ?>
 
-<div style="color:red">
+<div class="error-box">
 
 <?php foreach($errors as $error): ?>
 
@@ -134,7 +134,7 @@ exit();
 
 <?php endif; ?>
 
-<a href="index.php">Back</a>
-
+<a href="index.php" class="btn-back">Back</a>
+</div>
 </body>
 </html>
