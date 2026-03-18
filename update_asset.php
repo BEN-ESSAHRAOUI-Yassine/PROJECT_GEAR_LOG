@@ -112,101 +112,55 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <body>
 
-<h2>Edit Asset</h2>
+<div class="form-container">
 
-<?php if (!empty($errors)): ?>
+    <h1>Edit Asset</h1>
 
-<div style="color:red">
+    <?php if (!empty($errors)): ?>
+        <div class="error-box">
+            <?php foreach ($errors as $error): ?>
+                <p><?= htmlspecialchars($error) ?></p>
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
 
-<?php foreach ($errors as $error): ?>
+    <form class="asset-form" method="POST">
 
-<p><?= htmlspecialchars($error) ?></p>
+        <input type="text" name="serial"
+        placeholder="Serial Number"
+        value="<?= htmlspecialchars($_POST['serial'] ?? $asset['serial_number']) ?>">
 
-<?php endforeach; ?>
+        <input type="text" name="name"
+        placeholder="Device Name"
+        value="<?= htmlspecialchars($_POST['name'] ?? $asset['device_name']) ?>">
+
+        <input type="number" step="0.01" name="price"
+        placeholder="Price"
+        value="<?= htmlspecialchars($_POST['price'] ?? $asset['price']) ?>">
+
+        <select name="status">
+            <option value="Available" <?= ($asset['status']=="Available")?"selected":"" ?>>Available</option>
+            <option value="Deployed" <?= ($asset['status']=="Deployed")?"selected":"" ?>>Deployed</option>
+            <option value="Under Repair" <?= ($asset['status']=="Under Repair")?"selected":"" ?>>Under Repair</option>
+            <option value="Unavailable" <?= ($asset['status']=="Unavailable")?"selected":"" ?>>Unavailable</option>
+        </select>
+
+        <select name="category">
+            <?php foreach ($categories as $c): ?>
+                <option value="<?= $c['id'] ?>"
+                <?= ($asset['category_id']==$c['id'])?"selected":"" ?>>
+                    <?= htmlspecialchars($c['name']) ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+
+        <button type="submit" class="btn-submit">Update</button>
+
+    </form>
+
+    <a href="index.php" class="btn-back">Back</a>
 
 </div>
-
-<?php endif; ?>
-
-<form method="POST">
-
-<label>Serial Number</label><br>
-
-<input name="serial"
-value="<?= htmlspecialchars($_POST['serial'] ?? $asset['serial_number']) ?>">
-
-<br><br>
-
-<label>Device Name</label><br>
-
-<input name="name"
-value="<?= htmlspecialchars($_POST['name'] ?? $asset['device_name']) ?>">
-
-<br><br>
-
-<label>Price</label><br>
-
-<input type="number"
-step="0.01"
-name="price"
-value="<?= htmlspecialchars($_POST['price'] ?? $asset['price']) ?>">
-
-<br><br>
-
-<label>Status</label><br>
-
-<select name="status">
-
-<option value="Available"
-<?= ($asset['status']=="Available")?"selected":"" ?>>
-Available
-</option>
-
-<option value="Deployed"
-<?= ($asset['status']=="Deployed")?"selected":"" ?>>
-Deployed
-</option>
-
-<option value="Under Repair"
-<?= ($asset['status']=="Under Repair")?"selected":"" ?>>
-Under Repair
-</option>
-
-<option value="Unavailable"
-<?= ($asset['status']=="Unavailable")?"selected":"" ?>>
-Unavailable
-</option>
-
-</select>
-
-<br><br>
-
-<label>Category</label><br>
-
-<select name="category">
-
-<?php foreach ($categories as $c): ?>
-
-<option value="<?= $c['id'] ?>"
-<?= ($asset['category_id']==$c['id'])?"selected":"" ?>>
-
-<?= htmlspecialchars($c['name']) ?>
-
-</option>
-
-<?php endforeach; ?>
-
-</select>
-
-<br><br>
-
-<button type="submit">Update Asset</button>
-
-</form>
-
-<br>
-
-<a href="index.php">Back to Dashboard</a>
 
 </body>
 
