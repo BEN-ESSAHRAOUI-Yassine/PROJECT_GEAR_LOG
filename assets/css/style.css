@@ -13,13 +13,22 @@ h3 {
     margin: 5px 0;
 }
 
-p {
+.p-welcome {
     margin: 8px 0 0;
     font-size: 20px;
     font-weight: bold;
     color: #2c3e50;
 }
 
+.p-welcome .username {
+    color: rgb(6, 6, 72);   /* Color for the username */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+.p-welcome .role {
+    color: rgb(39, 48, 181);  /* Color for the role */
+    font-style: italic; /* Optional: italicize the role */
+}
 /* ----- TOOLBAR ----- */
 .toolbar {
     display: flex;
@@ -119,16 +128,6 @@ table tr:hover {
 .status-unavailable { background: #e74c3c; }    /* red */
 .status-under-repair { background: #f39c12; }   /* orange */
 .status-deployed { background: #3498db; }         /* blue */
-
-p.username {
-    color: rgb(6, 6, 72);   /* Color for the username */
-    font-weight: bold; /* Optional: make it bold */
-}
-
-p.role {
-    color: rgb(39, 48, 181);  /* Color for the role */
-    font-style: italic; /* Optional: italicize the role */
-}
 
 .pagination {
     display: flex;

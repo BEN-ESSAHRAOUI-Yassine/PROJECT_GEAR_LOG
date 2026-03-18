@@ -131,13 +131,14 @@ function sortLink($column, $label, $sort, $order, $queryBase) {
 
 <h1>GearLog - Asset Dashboard</h1>
 
-<p>
+<div class="p-welcome">
     Welcome <span class="username"><?php echo htmlspecialchars($_SESSION['username']); ?></span> (<span class="role"><?php echo htmlspecialchars($_SESSION['role']); ?></span>) |
+   
     <a href="logout.php" class="logout-btn">Logout</a> 
     <?php if(canManageUsers()): ?>
     <a href="admin/users.php" class="btn-manage">Manage Users</a>
     <?php endif; ?>
-</p>
+</div> 
 <br>
 <div class="summary-container">
     <div class="summary-item">
