@@ -374,3 +374,11 @@ background:#636e72;
     display: inline-block;
     margin-top: 15px;
 }
+
+.error-box {
+    background: #ffe6e6;
+    color: #c0392b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
