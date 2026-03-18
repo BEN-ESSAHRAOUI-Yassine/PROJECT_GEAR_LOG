@@ -13,6 +13,13 @@ h3 {
     margin: 5px 0;
 }
 
+p {
+    margin: 8px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
 /* ----- TOOLBAR ----- */
 .toolbar {
     display: flex;
@@ -113,7 +120,7 @@ table tr:hover {
 .status-under-repair { background: #f39c12; }   /* orange */
 .status-deployed { background: #3498db; }         /* blue */
 
-/* ----- PAGINATION ----- */
+/* ----- PAGINATION ----- 
 .pagination a {
     margin: 0 5px;
     text-decoration: none;
@@ -122,6 +129,49 @@ table tr:hover {
 }
 .pagination a:hover {
     text-decoration: underline;
+}*/
+
+/* ----- PAGINATION (MODERN) ----- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 8px;
+}
+
+/* Page links */
+.pagination a {
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #3498db;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.pagination a:hover {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+/* Active page */
+.pagination a.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+    font-weight: bold;
+}
+
+/* Disabled (optional) */
+.pagination a.disabled {
+    color: #aaa;
+    pointer-events: none;
+    background: #f4f4f4;
 }
 
 /* ----- log out button ----- */

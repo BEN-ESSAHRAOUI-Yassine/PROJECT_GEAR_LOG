@@ -133,7 +133,7 @@ function sortLink($column, $label, $sort, $order, $queryBase) {
 
 <p>
 Welcome <?= htmlspecialchars($_SESSION['username']) ?>
-(<?= htmlspecialchars($_SESSION['role']) ?>) |
+  (<?= htmlspecialchars($_SESSION['role']) ?>) |
 <a href="logout.php" class="logout-btn">Logout</a> 
 <?php if(canManageUsers()): ?>
 <a href="admin/users.php" class="btn-manage">Manage Users</a>
