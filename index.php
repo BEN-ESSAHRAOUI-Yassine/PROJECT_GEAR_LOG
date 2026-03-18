@@ -132,14 +132,13 @@ function sortLink($column, $label, $sort, $order, $queryBase) {
 <h1>GearLog - Asset Dashboard</h1>
 
 <p>
-Welcome <?= htmlspecialchars($_SESSION['username']) ?>
-  (<?= htmlspecialchars($_SESSION['role']) ?>) |
-<a href="logout.php" class="logout-btn">Logout</a> 
-<?php if(canManageUsers()): ?>
-<a href="admin/users.php" class="btn-manage">Manage Users</a>
-<?php endif; ?>
+    Welcome <span class="username"><?php echo htmlspecialchars($_SESSION['username']); ?></span> (<span class="role"><?php echo htmlspecialchars($_SESSION['role']); ?></span>) |
+    <a href="logout.php" class="logout-btn">Logout</a> 
+    <?php if(canManageUsers()): ?>
+    <a href="admin/users.php" class="btn-manage">Manage Users</a>
+    <?php endif; ?>
 </p>
-
+<br>
 <div class="summary-container">
     <div class="summary-item">
         <h4>Total Inventory Value:</h4>
@@ -156,6 +155,7 @@ Welcome <?= htmlspecialchars($_SESSION['username']) ?>
         <p><?= htmlspecialchars($totalAssets) ?> / <?= htmlspecialchars($totalAssetsInventory) ?></p>
     </div>
 </div>
+<br>
 <!-- Toolbar -->
 <div class="toolbar">
     <?php if(canEditAssets()): ?>

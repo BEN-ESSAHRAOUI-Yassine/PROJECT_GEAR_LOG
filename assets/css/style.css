@@ -120,18 +120,16 @@ table tr:hover {
 .status-under-repair { background: #f39c12; }   /* orange */
 .status-deployed { background: #3498db; }         /* blue */
 
-/* ----- PAGINATION ----- 
-.pagination a {
-    margin: 0 5px;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
+p.username {
+    color: rgb(6, 6, 72);   /* Color for the username */
+    font-weight: bold; /* Optional: make it bold */
 }
-.pagination a:hover {
-    text-decoration: underline;
-}*/
 
-/* ----- PAGINATION (MODERN) ----- */
+p.role {
+    color: rgb(39, 48, 181);  /* Color for the role */
+    font-style: italic; /* Optional: italicize the role */
+}
+
 .pagination {
     display: flex;
     justify-content: center;
