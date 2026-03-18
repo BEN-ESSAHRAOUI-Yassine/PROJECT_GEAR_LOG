@@ -140,12 +140,22 @@ Welcome <?= htmlspecialchars($_SESSION['username']) ?>
 <?php endif; ?>
 </p>
 
+<div class="summary-container">
+    <div class="summary-item">
+        <h4>Total Inventory Value:</h4>
+        <p>$<?= htmlspecialchars($totalValue) ?></p>
+    </div>
 
+    <div class="summary-item">
+        <h4>Filtered Inventory Value:</h4>
+        <p>$<?= htmlspecialchars($filteredValue ?? 0) ?></p>
+    </div>
 
-<h3>Total Inventory Value: $<?= htmlspecialchars($totalValue) ?></h3>
-<h3>Filtered Inventory Value: $<?= htmlspecialchars($filteredValue ?? 0) ?></h3>
-<h3>Shown Assets: <?= htmlspecialchars($totalAssets) ?> / <?= htmlspecialchars($totalAssetsInventory) ?></h3>
-
+    <div class="summary-item">
+        <h4>Shown Assets:</h4>
+        <p><?= htmlspecialchars($totalAssets) ?> / <?= htmlspecialchars($totalAssetsInventory) ?></p>
+    </div>
+</div>
 <!-- Toolbar -->
 <div class="toolbar">
     <?php if(canEditAssets()): ?>
